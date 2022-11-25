@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    container_name: postgres_speak_app
+    ports:
+      - '5435:5432'
+    environment:
+      - POSTGRES_PASWORD=admin
+      - POSTGRES_USER=postgres
+   #   - POSTGRES_HOST_AUTH_METHOD=trust
